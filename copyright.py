@@ -19,7 +19,7 @@ API_ID = 29593257
 API_HASH = "e9a3897c961f8dce2a0a88ab8d3dd843"
 BOT_TOKEN = "8273627249:AAEoe7ZrtgO4vS0uJDC6RVuYVBN9oAziTRA"
 DEVS = [8132657352, 7788565948]
-BOT_USERNAME = "BOT" # change your bot username without @
+BOT_USERNAME = "Anti_PornographicBot" # change your bot username without @
 
 ALL_GROUPS = []
 TOTAL_USERS = []
@@ -51,7 +51,7 @@ START_MESSAGE = """
  **Process?:** Simply add me in your group and promote as admin with delete messages right!
 """
 
-BUTTON = [[InlineKeyboardButton("+ Add me in group +", url=f"http://t.me/{BOT_USERNAME}?startgroup=s&admin=delete_messages")]]
+BUTTON = [[InlineKeyboardButton("+ Add me in group +", url=f"http://t.me/Anti_PornographicBot?startgroup=s&admin=delete_messages")]]
 
 bot = Client('bot', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
