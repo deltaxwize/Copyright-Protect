@@ -17,9 +17,9 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 API_ID = 29593257
 API_HASH = "e9a3897c961f8dce2a0a88ab8d3dd843"
-BOT_TOKEN = "8273627249:AAEoe7ZrtgO4vS0uJDC6RVuYVBN9oAziTRA"
+BOT_TOKEN = "7579835020:AAGD9UfEzvcAVzljvsUfOznU_dZ_Ncr5WfQ"
 DEVS = [8132657352, 7788565948]
-BOT_USERNAME = "Anti_PornographicBot" # change your bot username without @
+BOT_USERNAME = "AntiPornographic_Bot" # change your bot username without @
 
 ALL_GROUPS = []
 TOTAL_USERS = []
