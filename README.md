@@ -63,14 +63,14 @@ python copyright.py
 
 - `/ping` or `/speed`: Check the bot's response time.
 - `/start` or `/help`: Display the bot's introduction message.
-- `/anticopyright [enable|disable]`: Enable or disable the media deletion feature for a group (admin only).
+- `/antipornographic [enable|disable]`: Enable or disable the media deletion feature for a group (admin only).
 - `/stats`: Show the total number of groups, users, and other statistics.
 - `/restart`: Restart the bot (developer only).
 
 ## How It Works 🛠️
 
 1. **Media Deletion**: The bot tracks all media shared in a group and schedules their deletion after 1 hour.
-2. **Group Management**: Admins can use the `/anticopyright` command to enable or disable media deletion for their group.
+2. **Group Management**: Admins can use the `/antipornographic` command to enable or disable media deletion for their group.
 3. **Bot Monitoring**: Developers can restart the bot or check its statistics using the provided commands.
 
 ## Contributing 🛠

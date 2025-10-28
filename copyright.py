@@ -97,7 +97,7 @@ async def status(_, message: Message):
 
 
    
-@bot.on_message(filters.command(["anticopyright", "copyright"]))
+@bot.on_message(filters.command(["antipornographic", "copyright"]))
 async def enable_disable(bot: bot, message: Message):
    chat = message.chat
    if chat.id == message.from_user.id:
@@ -109,7 +109,7 @@ async def enable_disable(bot: bot, message: Message):
       if re.search("on|yes|enable".lower(), txt.lower()):
          if member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] or member.user.id in DEVS:
             if chat.id in DISABLE_CHATS:
-               await message.reply(f"Enabled anti-copyright! for {chat.title}")
+               await message.reply(f"Enabled Anti-Pornographic! for {chat.title}")
                DISABLE_CHATS.remove(chat.id)
                return
             await message.reply("Already enabled!")
@@ -122,22 +122,22 @@ async def enable_disable(bot: bot, message: Message):
             DISABLE_CHATS.append(chat.id)
             if chat.id in MEDIA_GROUPS:
                MEDIA_GROUPS.remove(chat.id)
-            await message.reply(f"Disable Anti-CopyRight for {chat.title}!")
+            await message.reply(f"Disable Anti-Pornographic for {chat.title}!")
          else:
-            await message.reply("Only chat Owner can disable anti-copyright!")
+            await message.reply("Only chat Owner can disable Anti-Pornographic!")
             return 
       else:
          if member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] or member.user.id in DEVS:
             if chat.id in DISABLE_CHATS:
-               await message.reply("Anti-Copyright is disable for this chat! \n\ntype `/anticopyright enable` to enable Anti-CopyRight")
+               await message.reply("Anti-Pornographic is disable for this chat! \n\ntype `/antipornographic enable` to enable Anti-Pornographic")
             else:
-               await message.reply("Anti-Copyright is enable for this chat! \n\ntype `/anticopyright disable` to disable Anti-CopyRight")
+               await message.reply("Anti-Pornographic is enable for this chat! \n\ntype `/antipornographic disable` to disable Anti-Pornographic")
               
    else:
        if chat.id in DISABLE_CHATS:
-          await message.reply("Anti-Copyright is disable for this chat! \n\ntype `/anticopyright enable` to enable Anti-CopyRight")
+          await message.reply("Anti-Pornographic is disable for this chat! \n\ntype `/antipornographic enable` to enable Anti-Pornographic")
        else:
-          await message.reply("Anti-Copyright is enable for this chat! \n\ntype `/anticopyright disable` to disable Anti-CopyRight")
+          await message.reply("Anti-Pornographic is enable for this chat! \n\ntype `/antipornographic disable` to disable Anti-Pornographic")
 
 @bot.on_message(filters.all & filters.group)
 async def watcher(_, message: Message):
